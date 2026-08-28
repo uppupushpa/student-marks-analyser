@@ -1,7 +1,7 @@
 import csv
 import os
 
-name = input("Enter student full name: ")
+name = input("Enter student full gname: ")
 subjects = ["Python","Database","Maths","English","Computer"]
 marks = []
 
@@ -11,6 +11,7 @@ for subject in subjects:
 
 total = sum(marks)
 average = total / len(marks)
+cgpa = average / 9.5
 
 if average >= 90:
     grade = "A+"
